@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Temperatur conversion  </title>
+      <link rel="stylesheet" href="temp.c.css"/>
+  </head>
+  <body> 
+    <div class="main-ctn">
+      <h2>Temperature Conversion</h2>
+      <div class="container">
+        <p>Celsius</p>
+        <input id="c" placeholder="Enter value">
+        <p>Fahrenheit</p>
+        <input id="f" placeholder="Enter value"> 
+      </div>
+      <div class="btn-ctn">
+        <button type="button" onclick="convert()">Submit</button>
+        <button type="button" onclick="res()">Reset</button>
+      </div>
+    </div>
+    <script>
+      function convert() {
+        var c =  document.getElementById("c").value;
+        var f =  document.getElementById("f").value;
+        if (f==0) {
+          x = document.getElementById("c").value * 9 / 5 + 32;
+          document.getElementById("f").value = Math.round(x);
+        } else if(c==0){
+          x = (document.getElementById("f").value -32) * 5 / 9;
+          document.getElementById("c").value = Math.round(x);
+        }
+      }
+      function res() {
+        document.getElementById("c").value="";
+        document.getElementById("f").value="";
+      }
+    </script> 
+  </body>
+</html>

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'roboto+mono', sana-serif;
+    font-size: 23px;
+}
+
+body {
+    height: 100vh;
+    background: url('file:///C:/Users/nagar/Downloads/final%20temperatur%20conversion/back.jpg') no-repeat ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+
+}
+
+.main-ctn{
+    height: 600px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2{
+    text-align:center;
+    font-size: 45px;
+}
+
+.container {
+    width: auto;
+    min-height: 200px;
+    background-color: #ffffff8f;
+    padding: 70px 40px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn-ctn{
+    width: 350px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div button{
+    width: 150px;
+    height: 40px;
+    border: 0px;
+    border-radius: 8px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+    outline: none;
+    margin-top: 8px;
+    padding: 0 10px;
+}
